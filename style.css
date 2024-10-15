@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rajdhani';
+    font-size: 30px;
+    list-style: none;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0px 0px 15px black;
+}
+.logo{
+    cursor:pointer;
+    display: inline-block;
+}
+.imgen{
+    height: 115px;
+    transition: all 0.3s;
+    width: 190px;
+}
+.imgens{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 100px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a:hover{
+    color: rgb(0, 102, 185);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+  font-weight: 400;
+}
+p{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ul{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fdfdfd;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(190, 190, 190);
+    margin-top: 100vh;
+    height: 15vh;
+}
+.store-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1900px;
+    margin: auto;
+}
+
+.product {
+    background-color: rgba(39, 37, 37, 0.384);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 610px;
+    width: 1700px;
+}
+
+.product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: rgb(0, 96, 185);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 96, 185);
+    border: 1px solid rgb(0, 96, 185);
+}
