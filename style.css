@@ -9,13 +9,18 @@
     list-style: none;
     
 }
-
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(184, 147, 78, 0.747);
+    
+}
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgba(187, 146, 70, 0.473);
     box-shadow: 0px 0px 15px black;
 }
 .logo{
@@ -23,13 +28,15 @@ header{
     display: inline-block;
 }
 .imgen{
-    height: 115px;
+    height: 90px;
     transition: all 0.3s;
-    width: 190px;
+    width: 150px;
+    display:flex;
+    padding-right:30px;
 }
 .imgens{
-    height: 200px;
-    width: 400px;
+    height: 230px;
+    width: 700px;
     border-radius: 10px;
     transition: all 0.3s;
 
@@ -41,14 +48,14 @@ header{
     gap: 100px;
 }
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(61, 57, 57);
     text-decoration: none;
     font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 a:hover{
-    color: rgb(0, 102, 185);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -80,11 +87,13 @@ ul{
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: x-large;
 }
 li{
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size:x-large;
 }
 
 .button {
@@ -115,6 +124,7 @@ footer {
     padding: 20px;
     max-width: 1900px;
     margin: auto;
+    display: grid;
 }
 
 .product {
@@ -159,4 +169,31 @@ footer {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 96, 185);
     border: 1px solid rgb(0, 96, 185);
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+th {
+    background-color:rgba(187, 146, 70, 0.473);
+    color: rgb(0, 0, 0);
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1a6;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
