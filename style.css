@@ -118,7 +118,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: rgb(190, 190, 190);
-    margin-top: 100vh;
+    margin-top: 10px;
     height: 15vh;
 }
 .store-container {
@@ -284,3 +284,20 @@ footer p {
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
+
+.nosotros {
+    width: 270px;
+    
+}
+
+.imagenes1{
+    width: 590px;
+    height: 588px;
+    display: flex;
+}
+
+.separadort{
+display: flex;
+margin: 5px;
+}
+
