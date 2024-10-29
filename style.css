@@ -98,16 +98,17 @@ ul{
     font-size: x-large;
 }
 li{
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 Italic;
     font-style: normal;
-    font-size:x-large;
+    font-size: 0.8rem;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7fcfc9;
+    background-color: rgba(193, 201, 201, 0.863);
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
@@ -146,7 +147,11 @@ li{
 .product h1,
 .product p {
     text-align: left;
-    font-family: "Abel", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200 Italic;
+    font-style: normal;
+    font-size: auto; 
     max-width: 60%;
 }
 
