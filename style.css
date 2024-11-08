@@ -157,19 +157,6 @@ li{
     word-spacing: 0.3rem;
     color: #000000;
 }
-.product ul, li {
-    text-align: left;
-    font-family: "Sour Gummy", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    max-width: 100%;
-    font-size: 0.6rem;
-    line-height: 1.3;
-    color: #000000;
-    margin-top: 10px;
-
-}
 .tit{
     font-family: "Kanit", sans-serif;
     font-weight: 400;
@@ -519,11 +506,6 @@ header.dark-mode, footer.dark-mode {
 }
 .product.dark-mode p {
   color: #e0e0e0;  
-}
-
-.product.dark-mode ul, 
-.product.dark-mode li {
-  color: #e0e0e0; 
 }
 
 .product.dark-mode .tit {
