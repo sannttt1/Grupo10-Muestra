@@ -306,7 +306,7 @@ footer p {
         margin-bottom: 10px;
         font-family: "Sour Gummy", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 200;
+        font-weight: 400;
         font-style: normal;
         font-size: 0.7rem;
 
@@ -445,6 +445,19 @@ strong{
     transition-delay: 0.7s;
   }
   
+  .switch {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgba(224, 236, 236, 0.863);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #000;
+}
   .nav2 {
     background-color: rgba(224, 236, 236, 0.863);
     color: black;
@@ -466,4 +479,89 @@ strong{
   .nav2:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
-  };
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    border-color:#2b2b2b;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.intro.dark-mode,
+.nav-links.dark-mode{
+    color: #ffffff;
+    background-color: #2b2b2b;
+}
+.product.dark-mode{
+  background-color: #4341449d;
+  border-color:#2b2b2b;
+}
+
+.memoria-box.dark-mode {
+  background-color: #6361619d;
+  border-color:#1b1b1b;
+}
+.memoria-box.dark-mode p {
+  color: #e0e0e0; 
+}
+.memoria-box.dark-mode h2{
+  color:#e0e0e0; 
+}
+.memoria-box.dark-mode ul, 
+.memoria-box.dark-mode li {
+  color: #e0e0e0;  
+}
+.product.dark-mode p {
+  color: #e0e0e0;  
+}
+
+.product.dark-mode ul, 
+.product.dark-mode li {
+  color: #e0e0e0; 
+}
+
+.product.dark-mode .tit {
+  color: #e0e0e0;  
+}
+
+table.dark-mode {
+  background-color: #333; 
+  border-color: #555;
+}
+
+th.dark-mode, td.dark-mode {
+  color: #e0e0e0; 
+}
+
+
+th.dark-mode {
+  background-color: #161616; 
+}
+
+
+tbody tr.dark-mode:hover {
+  background-color: #555; 
+}
+a.dark-mode {
+    color: #a0a0a0;
+}
+
+a.dark-mode:hover {
+    color: #ffffff;
+}
+
+.button.dark-mode {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.button.dark-mode:hover {
+    background-color: #666;
+    color: #ffffff;
+}

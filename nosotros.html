@@ -9,12 +9,31 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img class="imgen" src="imgs/MemoData.png" alt="logo2"></a>
+            <a href="index.html"><img class="imgen" src="imgs/upc.png" alt="logo2"></a>
         </div>
         <div class="nav-links">
             <a class="nav2" href="gestMemo.html"> Gestión</a>
             <a class="nav2" href="tipos.html">Tipos</a>
             <a class="nav2" href="almacenamiento.html">Almacenamiento</a>
+            <div class="switch-container">
+                <button class="switch" id="colorSwitch">Modo Oscuro</button>
+            </div>
+            <script>
+                const switchButton = document.getElementById('colorSwitch');
+                switchButton.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-mode');
+                    document.querySelector('header').classList.toggle('dark-mode');
+                    document.querySelector('footer').classList.toggle('dark-mode');
+                const memoriaBoxes = document.querySelectorAll('.memoria-box');
+                memoriaBoxes.forEach(box => {
+                box.classList.toggle('dark-mode');
+                }); 
+
+                switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+
+                });
+            </script>
+        </div>
         </div> 
     </header>
     <div class="memoria-sections">
@@ -44,7 +63,6 @@
 
                 </div>
                 <div class="memoria-box">
-
                 <ul>
                     <h2>Andres Lopez Peralta</h2>
                     <img class="nosotros" src="imgs/Andres.jpeg" alt="Andres">
@@ -58,18 +76,17 @@
                     <div class="memoria-box">
                         <strong>Andrés López Peralta</strong>
                         <br>
-                        Andrés es un joven apasionado por varias actividades. Desde muy temprana edad, desarrolló un amor profundo por la lectura y la escritura, lo que lo ha llevado a nutrir su curiosidad y creatividad. Además de su interés por las letras, Andrés es un gran aficionado al fútbol. No solo le gusta jugar al fútbol con amigos, sino que también es un gran hincha de San Lorenzo. Le encanta ir a la cancha para alentar a su equipo, lo que para él es una de las experiencias más emocionantes.
+                        <p>Andrés es un joven apasionado por varias actividades. Desde muy temprana edad, desarrolló un amor profundo por la lectura y la escritura, lo que lo ha llevado a nutrir su curiosidad y creatividad. Además de su interés por las letras, Andrés es un gran aficionado al fútbol. No solo le gusta jugar al fútbol con amigos, sino que también es un gran hincha de San Lorenzo. Le encanta ir a la cancha para alentar a su equipo, lo que para él es una de las experiencias más emocionantes.</p>
                         <br>
                         <br>
                         <strong>Mateo Moras</strong>
                         <br>
-                        Desde chico, su vida ha estado marcada por su pasión por los deportes. Aunque jugar a la pelota es su actividad favorita, se siente igualmente atraído por todo tipo de disciplinas deportivas. Su entusiasmo por el deporte también se refleja en su lealtad a su equipo de fútbol Independiente. Mateo disfruta de la emoción de los partidos y sueña con ir siempre a la cancha para alentar a su equipo en vivo.
+                        <p>Desde chico, su vida ha estado marcada por su pasión por los deportes. Aunque jugar a la pelota es su actividad favorita, se siente igualmente atraído por todo tipo de disciplinas deportivas. Su entusiasmo por el deporte también se refleja en su lealtad a su equipo de fútbol Independiente. Mateo disfruta de la emoción de los partidos y sueña con ir siempre a la cancha para alentar a su equipo en vivo.</p>
                         <br>
                         <br>
                         <strong>Santiago Cappozzo</strong>
                         <br>
-                        Santiago es un joven que divide su tiempo entre varias actividades que lo apasionan. Le gusta mucho jugar a los videojuegos, un hobby que le permite conectarse con amigos y disfrutar de momentos divertidos. Además, es un amante del fútbol, lo que lo lleva a practicar este deporte con frecuencia. Sin embargo, una de sus características más destacadas es su dedicación al estudio. Santiago valora la importancia de la educación y se esfuerza por aprender siempre más, combinando su tiempo entre el ocio y el estudio.
-                
+                        <p>Santiago es un joven que divide su tiempo entre varias actividades que lo apasionan. Le gusta mucho jugar a los videojuegos, un hobby que le permite conectarse con amigos y disfrutar de momentos divertidos. Además, es un amante del fútbol, lo que lo lleva a practicar este deporte con frecuencia. Sin embargo, una de sus características más destacadas es su dedicación al estudio. Santiago valora la importancia de la educación y se esfuerza por aprender siempre más, combinando su tiempo entre el ocio y el estudio.</p>
                     </div>
                 </div>
                 <footer>
