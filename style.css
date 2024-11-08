@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -34,9 +35,9 @@ header{
     display: inline-block;
 }
 .imgen{
-    height: 90px;
+    height: 110px;
     transition: all 0.3s;
-    width: 150px;
+    width: 180px;
     display:flex;
     padding-right:30px;
 }
@@ -89,6 +90,7 @@ p{
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 0.7rem;
 }
 ul{
     font-family: "Abel", sans-serif;
@@ -145,23 +147,24 @@ li{
 }
 .product p {
     text-align: left;
-    font-family: "Raleway", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200 Italic;
-    font-style: normal; 
+    font-weight: 300;
+    font-style: normal;
     max-width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.3;
+    word-spacing: 0.3rem;
     color: #000000;
 }
-.product ul {
+.product ul, li {
     text-align: left;
-    font-family: "Raleway", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200 Italic;
-    font-style: normal; 
+    font-weight: 200;
+    font-style: normal;
     max-width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 1.3;
     color: #000000;
     margin-top: 10px;
@@ -173,47 +176,14 @@ li{
     font-style: normal;
 }
 .product img.imgens {
-    height: 400px;
+    height: 250px;
     width: auto;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: all 0.3s;
     object-fit: cover;
 }
 
-.product-img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.product-title {
-    font-size: 1.2rem;
-    margin: 15px 0;
-    font-family: "Oswald", sans-serif;
-}
-
-.product-price {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.buy-button {
-    background-color: rgb(0, 96, 185);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.buy-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 96, 185);
-    border: 1px solid rgb(0, 96, 185);
-}
 table {
     background-color: rgba(223, 236, 236, 0.863);
     border: solid;
@@ -223,16 +193,15 @@ th, td {
     padding: 10px;
     text-align: center;
     border: 2px solid #000000;
-    font-family:"Raleway", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400 Italic;
-    font-style: normal;;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7rem;
 }
 
 th {
     background-color: #16D2BF;
-    color: rgb(0, 0, 0);
-
     color: #000000;
 }
 tbody tr:hover {
@@ -248,10 +217,15 @@ footer {
     bottom: 0;
     width: 100%;
     border-top: solid;
+    
 }
 
 footer p {
     margin: 0;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .gest-memoria {
     margin: 40px auto;
@@ -301,17 +275,18 @@ footer p {
     font-optical-sizing: auto;
     font-weight: 400 Italic;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.memoria-box p, .memoria-box ul {
-    font-family: "Raleway", sans-serif;
+.memoria-box p{
+    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400 Italic;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.7rem;
+    line-height: 1.8;
+    word-spacing: 1.5;
     color: #000000;
 }
 
@@ -319,12 +294,22 @@ footer p {
     margin-left: 20px;
 }
 
-.memoria-box ul li {
+.memoria-box ul {
     margin-bottom: 10px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400 Italic;
+    font-weight: 400;
     font-style: normal;
+    font-size: 0.7rem;
+}
+.memoria-box li{
+        margin-bottom: 10px;
+        font-family: "Sour Gummy", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 0.7rem;
+
 }
 
 .memoria-imagen {
@@ -346,4 +331,139 @@ strong{
     font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 0.7rem;
 }
+/* From Uiverse.io by doniaskima */ 
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; 
+  font-size: 100%;
+  line-height: 1.3;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border-radius: 800px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.btn-53:hover span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+.btn-53:hover span:nth-child(8) {
+    transition-delay: 0.7s;
+  }
+  
+  .nav2 {
+    background-color: rgba(224, 236, 236, 0.863);
+    color: black;
+    border-radius: 10em;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid black;
+  }
+  
+  .nav2:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    color: #000;
+  };
+  
+  .nav2:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
