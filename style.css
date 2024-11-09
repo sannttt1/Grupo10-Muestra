@@ -35,9 +35,9 @@ header{
     display: inline-block;
 }
 .imgen{
-    height: 110px;
+    height: 2.8rem;
     transition: all 0.3s;
-    width: 180px;
+    width: 4.6rem;
     display:flex;
     padding-right:30px;
 }
@@ -52,7 +52,7 @@ header{
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    gap: 100px;
+    gap: 200px;
 }
 a{
     color: rgb(0, 0, 0);
@@ -487,7 +487,7 @@ input:checked + .slider:before {
     background-color: rgba(224, 236, 236, 0.863);
     color: black;
     border-radius: 10em;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     padding: 1em 2em;
     cursor: pointer;
