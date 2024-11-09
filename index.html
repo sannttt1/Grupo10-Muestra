@@ -16,22 +16,22 @@
             <a class="nav2" href="tipos.html">Tipos</a>
             <a class="nav2" href="almacenamiento.html">Almacenamiento</a>
             <div class="switch-container">
-                <button class="switch" id="colorSwitch">Modo Oscuro</button>
+                <label class="switch">
+                    <input type="checkbox" id="colorSwitch">
+                    <span class="slider"></span>
+                </label>
             </div>
             <script>
                 const switchButton = document.getElementById('colorSwitch');
-                switchButton.addEventListener('click', () => {
-                    document.body.classList.toggle('dark-mode');
-                    document.querySelector('header').classList.toggle('dark-mode');
-                    document.querySelector('footer').classList.toggle('dark-mode');
+                switchButton.addEventListener('change', () => {
+                document.body.classList.toggle('dark-mode');
+                document.querySelector('header').classList.toggle('dark-mode');
+                document.querySelector('footer').classList.toggle('dark-mode');
                 const memoriaBoxes = document.querySelectorAll('.memoria-box');
                 memoriaBoxes.forEach(box => {
                 box.classList.toggle('dark-mode');
-                }); 
-
-                switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
-
-                });
+               });
+            });
             </script>
         </div>
     </header>
@@ -103,23 +103,8 @@
    
   <footer>
     <p>&copy; Todos los derechos reservados, MemoData.</p>
-    <center>
-        <a href="nosotros.html">
-            <button class="btn-53">
-                <div class="original">Nosotros</div>
-                <div class="letters">
-                    <span>N</span>
-                    <span>O</span>
-                    <span>S</span>
-                    <span>O</span>
-                    <span>T</span>
-                    <span>R</span>
-                    <span>O</span>
-                    <span>S</span>
-                </div>
-            </button>
-        </a>
-    </center>
+
+    <a class="nos" href="nosotros.html">Nosotros</a>
 </footer> 
 </body>
 </html>
