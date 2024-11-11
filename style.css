@@ -323,7 +323,7 @@ strong{
   .switch {
     display: block;
     --width-of-switch: 4.5em;
-    --height-of-switch: 2.5em;
+    --height-of-switch: 2.3em;
     --size-of-icon: 1.4em;
     --slider-offset: 0.3em;
     position: relative;
@@ -375,9 +375,9 @@ input:checked + .slider:before {
     background-color: rgba(224, 236, 236, 0.863);
     color: black;
     border-radius: 10em;
-    font-size: 24px;
+    font-size: 0.8em;
     font-weight: 600;
-    padding: 0.8em 1.5em;
+    padding: 0.7em 1.3em;
     cursor: pointer;
     transition: all 0.3s;
     border: 1px solid black;
@@ -516,21 +516,3 @@ a.dark-mode:hover {
   box-shadow: none;
   transform: translateY(0);
  }
-
-@media (max-width: 1612px) {
-  .nav-links {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        gap: 150px;
-  
-  }
-
-  .switch-container {
-      align-self: left; 
-  }
-  
-  .nav2 {
-      font-size: 20px;
-  }
-}
