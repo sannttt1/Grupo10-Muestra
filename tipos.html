@@ -8,52 +8,52 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html"><img class="imgen" src="imgs/logo4.png" alt="logo2"></a>
+        </div>
         <div class="nav-links">
-            <div class="logo">
-                <a href="index.html"><img class="imgen" src="imgs/logo4.png" alt="logo2"></a>
-            </div>
             <a class="nav2" href="gestMemo.html"> Gestión</a>
             <a class="nav2" href="tipos.html">Tipos</a>
-            <a class="nav2" href="almacenamiento.html">Almacenamiento</a>
-            <div class="switch-container">
-                <label class="switch">
-                    <input type="checkbox" id="colorSwitch">
-                    <span class="slider"></span>
-                </label>
-            </div>
-            <script>
-                const switchButton = document.getElementById('colorSwitch');
-                switchButton.addEventListener('click', () => {
-                    document.body.classList.toggle('dark-mode');
-                    document.querySelector('header').classList.toggle('dark-mode');
-                    document.querySelector('footer').classList.toggle('dark-mode');
-                    const products = document.querySelectorAll('.product');
-                    products.forEach(product => {
-                    product.classList.toggle('dark-mode');
-                    });
-                    const tables = document.querySelectorAll('table');
-                    tables.forEach(table => {
-                    table.classList.toggle('dark-mode'); 
-
-                    const ths = table.querySelectorAll('th');
-                    ths.forEach(th => {
-                    th.classList.toggle('dark-mode');
-                    });
-
-                    const tds = table.querySelectorAll('td');
-                    tds.forEach(td => {
-                    td.classList.toggle('dark-mode');
-                    });
-                    const trs = table.querySelectorAll('tr');
-                    trs.forEach(tr => {
-                    tr.classList.toggle('dark-mode');
-                    });
-                });
-                    switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
-                });
-            </script>
+            <a class="nav2" href="almacenamiento.html">Almacenamiento</a>  
         </div>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="colorSwitch">
+                <span class="slider"></span>
+            </label>
         </div>
+        <script>
+            const switchButton = document.getElementById('colorSwitch');
+            switchButton.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                document.querySelector('header').classList.toggle('dark-mode');
+                document.querySelector('footer').classList.toggle('dark-mode');
+                const products = document.querySelectorAll('.product');
+                products.forEach(product => {
+                product.classList.toggle('dark-mode');
+                });
+                const tables = document.querySelectorAll('table');
+                tables.forEach(table => {
+                table.classList.toggle('dark-mode'); 
+
+                const ths = table.querySelectorAll('th');
+                ths.forEach(th => {
+                th.classList.toggle('dark-mode');
+                });
+
+                const tds = table.querySelectorAll('td');
+                tds.forEach(td => {
+                td.classList.toggle('dark-mode');
+                });
+                const trs = table.querySelectorAll('tr');
+                trs.forEach(tr => {
+                tr.classList.toggle('dark-mode');
+                });
+            });
+                switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+            });
+        </script>
+    </div>
     </header>
     <div class="store-container">
         <div class="product">
