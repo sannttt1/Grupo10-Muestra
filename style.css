@@ -52,7 +52,7 @@ header{
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    gap: 150px;
+    gap: 100px;
 }
 a{
     color: rgb(0, 0, 0);
@@ -489,7 +489,7 @@ input:checked + .slider:before {
     border-radius: 10em;
     font-size: 24px;
     font-weight: 600;
-    padding: 0.8em 2em;
+    padding: 0.8em 1.5em;
     cursor: pointer;
     transition: all 0.3s;
     border: 1px solid black;
