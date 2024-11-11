@@ -15,30 +15,30 @@
             <a class="nav2" href="gestMemo.html"> Gestión</a>
             <a class="nav2" href="tipos.html">Tipos</a>
             <a class="nav2" href="almacenamiento.html">Almacenamiento</a> 
-        </div>
-        <div class="switch-container">
-            <label class="switch">
-                <input type="checkbox" id="colorSwitch">
-                <span class="slider"></span>
-            </label>
-        </div>
-        <script>
-            const switchButton = document.getElementById('colorSwitch');
-            switchButton.addEventListener('click', () => {
-                document.body.classList.toggle('dark-mode');
-                document.querySelector('header').classList.toggle('dark-mode');
-                document.querySelector('footer').classList.toggle('dark-mode');
-            const memoriaBoxes = document.querySelectorAll('.memoria-box');
-            memoriaBoxes.forEach(box => {
-            box.classList.toggle('dark-mode');
-            }); 
-            const h2 = table.querySelectorAll('h2');
-                h2.forEach(h2 => {
-                h2.classList.toggle('dark-mode');
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="colorSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <script>
+                const switchButton = document.getElementById('colorSwitch');
+                switchButton.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-mode');
+                    document.querySelector('header').classList.toggle('dark-mode');
+                    document.querySelector('footer').classList.toggle('dark-mode');
+                const memoriaBoxes = document.querySelectorAll('.memoria-box');
+                memoriaBoxes.forEach(box => {
+                box.classList.toggle('dark-mode');
+                }); 
+                const h2 = table.querySelectorAll('h2');
+                    h2.forEach(h2 => {
+                    h2.classList.toggle('dark-mode');
+                    });
+                switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
                 });
-            switchButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
-            });
-        </script>
+            </script>
+        </div>
     </div>
     </header>
     <main>
