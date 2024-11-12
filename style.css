@@ -8,8 +8,7 @@
     padding: 0px;
     font-family: 'Rajdhani';
     font-size: 30px;
-    list-style: none;
-    
+    list-style: none;   
 }
 body{
     background-size: cover;
@@ -220,10 +219,15 @@ footer p {
     margin: 40px auto;
     max-width: 1700px;
     padding: 20px;
-    background: linear-gradient(40deg, #c5c2c2, #ecebeb 70%);
+    background: linear-gradient(40deg, #aaacd6, #f5f2f2 70%);
     border-radius: 15px;
 }
-
+.gest-memoria.dark-mode{
+    background: linear-gradient(40deg, #0a0a0a, #161616 70%);
+}
+.gest-memoria.dark-mode h1{
+    color: #fff;
+}
 .gest-memoria h1 {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -242,6 +246,9 @@ footer p {
     font-style: normal;
     color:#000000;
     line-height: 1.6;
+}
+.memoria-content.dark-mode {
+    color: #fff;
 }
 
 .memoria-sections {
@@ -365,12 +372,12 @@ strong{
 }
 
 input:checked + .slider {
-    background-color: #303136;
+    background-color: #030303;
 }
 
 input:checked + .slider:before {
     left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
-    background: #303136;
+    background: #030303;
     box-shadow: inset -3px -2px 5px -2px #141414dc, inset -10px -4px 0 0 rgba(224, 236, 236, 0.863);
 }
   .nav2 {
@@ -405,7 +412,7 @@ input:checked + .slider:before {
 }
 
 header.dark-mode, footer.dark-mode {
-    background: linear-gradient(40deg, #0f0f0f, #6361619d 70%);
+    background: #6361619d;
     color: #e0e0e0;
     border-color: #555;
 }
@@ -416,12 +423,12 @@ header.dark-mode, footer.dark-mode {
     background-color: #2b2b2b;
 }
 .product.dark-mode{
-  background: linear-gradient(40deg, #181818, #6361619d 70%);
+  background: #6361619d;
   border-color:#2b2b2b;
 }
 
 .memoria-box.dark-mode {
-  background: linear-gradient(40deg, #181818, #6361619d 70%);
+  background: #6361619d;
   border-color:#1b1b1b;
 }
 .memoria-box.dark-mode p {
@@ -479,12 +486,10 @@ a.dark-mode:hover {
     color: #ffffff;
 }
 .nav2.dark-mode {
-    transform: translateY(-4px) translateX(-2px);
-    box-shadow: 2px 5px 0 0 #242424;
     color: rgb(252, 252, 255);
     background-color: #030303;
     border: 2px solid rgb(58, 58, 59);
-  };
+  }
 .nos {
   appearance: none;
   background: linear-gradient(40deg, #aaacd6, #f5f2f2 70%);
@@ -511,7 +516,17 @@ a.dark-mode:hover {
   touch-action: manipulation;
   will-change: transform;
  }
- 
+ .nos.dark-mode{
+  background: #6361619d;
+  color: #fff;
+  border: #6361619d;;
+
+ }
+ .nos.dark-mode:hover{
+  background: #ffffff;
+  color: #131313;
+
+ }
  .nos:disabled {
   pointer-events: none;
  }
