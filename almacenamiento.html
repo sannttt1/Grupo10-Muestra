@@ -28,6 +28,10 @@
                 document.body.classList.toggle('dark-mode');
                 document.querySelector('header').classList.toggle('dark-mode');
                 document.querySelector('footer').classList.toggle('dark-mode');
+                const naves2 = document.querySelectorAll('.nav2');
+    naves2.forEach(box => {
+    box.classList.toggle('dark-mode');
+   });
                 const products = document.querySelectorAll('.product');
                 products.forEach(product => {
                 product.classList.toggle('dark-mode');
@@ -40,7 +44,7 @@
     <div class="store-container">
     <div class="product">
     <p>
-        <strong>Memoria Flash:</strong>
+        Memoria Flash:
         <br>
         Es una forma de memoria no volátil que se usa principalmente en dispositivos como
         discos duros sólidos (SSD), tarjetas de memoria y unidades USB. Los datos no se pierden cuando el dispositivo se apaga. Más rápida que los discos duros tradicionales (HDD). Menor duración en términos de ciclos de escritura, pero aún así tiene una vida útil
@@ -53,7 +57,7 @@
     <div class="store-container">
         <div class="product">
         <p>
-            <strong>Discos duros (HDD):</strong>
+            Discos duros (HDD):
             <br>
             Un dispositivo de almacenamiento no volátil tradicional, que utiliza discos
             magnéticos giratorios para leer y escribir datos. Está compuesta de una placa que contiene compartimentos para retener los datos. Estos datos son su sistema operativo, aplicaciones y cualquier otro archivo que ha creado. También hay un brazo actuador que se mueve por el disco para leer o escribir la información solicitada.</p>
@@ -63,7 +67,7 @@
         <div class="store-container">
             <div class="product">
                 <p>
-                    <strong>Memoria Virtual:</strong>
+                    Memoria Virtual:
                     <br>
                     Un mecanismo que permite a la computadora usar parte del disco duro como si
                     fuera RAM adicional, cuando la RAM física se agota. Es una técnica que las computadoras usan para mover temporalmente datos desde la RAM (random-access memori) al disco duro cuando la cantidad disponible de RAM es limitada. La ilusión de la memoria virtual está soportada por el mecanismo de traducción de memoria, junto con una gran cantidad de almacenamiento rápido en disco duro.</p>           
@@ -73,7 +77,7 @@
             <div class="store-container">
                 <div class="product">
                     <p>
-                        <strong>Memoria de acceso directo a memoria (DMA):</strong>
+                        Memoria de acceso directo a memoria (DMA):
                         <br>
                         Un sistema que permite a ciertos dispositivos periféricos (como una tarjeta gráfica o
                         una tarjeta de sonido) acceder directamente a la memoria principal, sin intervención de la

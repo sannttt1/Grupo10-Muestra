@@ -22,18 +22,7 @@
                 <span class="slider"></span>
             </label>
         </div>
-        <script>
-            const switchButton = document.getElementById('colorSwitch');
-            switchButton.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode');
-            document.querySelector('header').classList.toggle('dark-mode');
-            document.querySelector('footer').classList.toggle('dark-mode');
-            const memoriaBoxes = document.querySelectorAll('.memoria-box');
-            memoriaBoxes.forEach(box => {
-            box.classList.toggle('dark-mode');
-           });
-        });
-        </script>
+        
     </header>
   <h1 class="intro">¿Qué es la Memoria Informática?</h1>
     <p class="intro">
@@ -82,20 +71,20 @@
         <div class="memoria-box">
             <h2>Avances Clave en Memoria Informática</h2>
             <ul>
-                <li><strong>Memoria Cache</strong>: Introducida para reducir los tiempos de acceso entre el procesador y la memoria principal.</li>
-                <li><strong>Memoria Virtual</strong>: Permite que los sistemas operativos utilicen más memoria de la que físicamente está disponible en el hardware.</li>
-                <li><strong>Memoria Flash</strong>: Utilizada en dispositivos móviles y unidades SSD por su capacidad de retener datos sin alimentación eléctrica.</li>
+                <li>Memoria Cache: Introducida para reducir los tiempos de acceso entre el procesador y la memoria principal.</li>
+                <li>Memoria Virtual: Permite que los sistemas operativos utilicen más memoria de la que físicamente está disponible en el hardware.</li>
+                <li>Memoria Flash: Utilizada en dispositivos móviles y unidades SSD por su capacidad de retener datos sin alimentación eléctrica.</li>
             </ul>
         </div>
 
-        
+
         <div class="memoria-box">
             <h2>Personas Influyentes en el Desarrollo de la Memoria</h2>
             <ul>
-                <li><strong>John von Neumann</strong>: Creador del concepto de memoria unificada en su arquitectura de "programa almacenado".</li>
-                <li><strong>Frederick C. Williams</strong>: Inventor de la memoria Williams, una de las primeras formas de almacenamiento electrónico.</li>
-                <li><strong>Jay Forrester</strong>: Desarrollador de la memoria de núcleos magnéticos, la cual fue clave en las primeras computadoras.</li>
-                <li><strong>Robert Dennard</strong>: Inventor de la tecnología DRAM, que es la base de la mayoría de las memorias modernas.</li>
+                <li>John von Neumann: Creador del concepto de memoria unificada en su arquitectura de "programa almacenado".</li>
+                <li>Frederick C. Williams: Inventor de la memoria Williams, una de las primeras formas de almacenamiento electrónico.</li>
+                <li>Jay Forrester: Desarrollador de la memoria de núcleos magnéticos, la cual fue clave en las primeras computadoras.</li>
+                <li>Robert Dennard: Inventor de la tecnología DRAM, que es la base de la mayoría de las memorias modernas.</li>
             </ul>
         </div>
     </div>
@@ -106,5 +95,21 @@
 
     <a class="nos" href="nosotros.html">Nosotros</a>
 </footer> 
+<script>
+    const switchButton = document.getElementById('colorSwitch');
+    switchButton.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+    document.querySelector('footer').classList.toggle('dark-mode');
+    const naves2 = document.querySelectorAll('.nav2');
+    naves2.forEach(box => {
+    box.classList.toggle('dark-mode');
+   });
+    const memoriaBoxes = document.querySelectorAll('.memoria-box');
+    memoriaBoxes.forEach(box => {
+    box.classList.toggle('dark-mode');
+   });
+});
+</script>
 </body>
 </html>

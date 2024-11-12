@@ -28,6 +28,10 @@
                 document.body.classList.toggle('dark-mode');
                 document.querySelector('header').classList.toggle('dark-mode');
                 document.querySelector('footer').classList.toggle('dark-mode');
+                const naves2 = document.querySelectorAll('.nav2');
+    naves2.forEach(box => {
+    box.classList.toggle('dark-mode');
+   });
                 const products = document.querySelectorAll('.product');
                 products.forEach(product => {
                 product.classList.toggle('dark-mode');
@@ -58,7 +62,7 @@
     <div class="store-container">
         <div class="product">
             <p>
-                <strong>Memoria principal o memoria RAM (Random Access Memory):</strong> 
+                Memoria principal o memoria RAM (Random Access Memory):
                 <br>
                 Es la memoria volátil que utiliza la computadora para almacenar datos temporales que están en uso o en ejecución. La información se pierde cuando la computadora se apaga Permite leer y escribir en cualquier parte de la memoria en cualquier momento. Generalmente varía de 4 GB a 64 GB o más, dependiendo del tipo de
                 computadora. Almacena los programas en ejecución y los datos temporales. Mejora el rendimiento, ya que proporciona un acceso rápido a los datos que necesita
@@ -68,7 +72,7 @@
         </div>
         <div class="product">
             <p>
-                <strong>Memoria ROM (Read-Only Memory):</strong>
+                Memoria ROM (Read-Only Memory):
                 <br>
                 Memoria no volátil que contiene datos de solo lectura que no se modifican durante
                 la operación normal de la computadora.  Los datos se mantienen incluso si la computadora se apaga. Contiene firmware y el BIOS (Basic Input Output System). Almacena instrucciones que la computadora necesita para arrancar y controlar
@@ -78,7 +82,7 @@
         </div>
         <div class="product">
             <p>
-                <strong>Memoria caché (Cache Memory):</strong>
+                Memoria caché (Cache Memory):
                 <br>
                 Es una memoria muy rápida que está integrada en la CPU o cerca de ella. Se usa para almacenar temporalmente instrucciones y datos que la CPU necesita con frecuencia. Mucho más rápida que la RAM. Es más cara de implementar, por lo que se encuentra en cantidades pequeñas. Se divide en niveles:
             </p>
@@ -89,10 +93,10 @@
     <table>
         <thead>
             <tr>
-                <th> <strong>Característica</strong></th>
-                <th><strong>RAM</strong></th>
-                <th><strong>ROM</strong></th>
-                <th><strong>Memoria Caché</strong></th>
+                <th>Característica</th>
+                <th>RAM</th>
+                <th>ROM</th>
+                <th>Memoria Caché</th>
             </tr>
         </thead>
         <tbody>
